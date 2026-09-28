@@ -1,44 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Fitlife - Taxa metabólica Basal</title>
-</head>
-
-
-<body style="font-family: Poppins">
-
+  </head>
+  <body style="font-family: Poppins">
     <nav>
-    
-        <a href="../index.html"> FitLife</a>
-    
-        <ul>
-            <li> IMC <a href="./imc.html"> Acesse a calculadora de Indíce de Massa Corporal </a> </li>
-            <li> TMB <a href="./tmb.html"> Acesse a calculadora de Taxa Metabólica Basal </a></li>
-            <li> HIDRATAÇÃO <a href="./imc.html"> Acesse a calculadora de Indíce de Massa Corporal </a> </li>
-        </ul>
-    
-    
+      <a href="../index.html"> FitLife</a>
+      <ul>
+        <li>
+            <a href="./index.html">Home</a>
+        </li>
+        <li>
+          IMC
+          <a href="./imc.html">
+            Acesse a calculadora de Indíce de Massa Corporal
+          </a>
+        </li>
+        <li>
+          TMB
+          <a href="./tmb.html">
+            Acesse a calculadora de Taxa Metabólica Basal
+          </a>
+        </li>
+        <li>
+          HIDRATAÇÃO
+          <a href="./water.html">
+            Acesse a calculadora de Controle de Hidratação
+          </a>
+        </li>
+      </ul>
     </nav>
-    
     <main>
+      <section>
+        <form action="">
 
-        <section>
-
-            <h3> TMB </h3>
+            <div>
+          <label for="gender">Gênero</label>
+          <select name="gender" id="gender">
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            </div>
+            <div>
+          </select>
+          <label for="height">Altura(cm)</label>
+          <input type="number" name="" id="height" placeholder="Ex: 175" />
+        </div>
+        <div>
+          <label for="weight">Peso (kg)</label>
+          <input type="text" id="weight" placeholder="Ex: 70" />
+        </div>
+        <div>
+          <label for="age">Idade (anos)</label>
+          <input type="number" id="age" placeholder="18" />
+        </div>
+        <div>
+          <button>Calcular Calorias</button>
+        </form>
+        <a href="../index.html">Voltar</a>
+        </div>
+        <div>
+            <p>Gasto Calórico Basal:</p>
+            <p>0000</p>
+            <p>Kcal/dia.</p>
+        </div>
+        <!-- <h3> TMB </h3>
             <p> Em breve você poderá calcular seu TMB </p>
-            <a href="../index.html"> Voltar </a>
-        </section>
+            <a href="../index.html"> Voltar </a> -->
+      </section>
     </main>
-    
-
-</body>
-
-
+    <footer>
+        <p> © 2026 FitLife
+    </footer>
+  </body>
 </html>
