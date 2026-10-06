@@ -9,75 +9,62 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Fitlife - Taxa metabólica Basal</title>
+    <title>FitLife - TMB</title>
   </head>
-  <body style="font-family: Poppins">
+
+  <body>
     <nav>
-      <a href="../index.html"> FitLife</a>
+      <a href="../index.html">FitLife</a>
+
       <ul>
-        <li>
-            <a href="./index.html">Home</a>
-        </li>
-        <li>
-          IMC
-          <a href="./imc.html">
-            Acesse a calculadora de Indíce de Massa Corporal
-          </a>
-        </li>
-        <li>
-          TMB
-          <a href="./tmb.html">
-            Acesse a calculadora de Taxa Metabólica Basal
-          </a>
-        </li>
-        <li>
-          HIDRATAÇÃO
-          <a href="./water.html">
-            Acesse a calculadora de Controle de Hidratação
-          </a>
-        </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./imc.html">IMC</a></li>
+        <li><a href="./tmb.html">TMB</a></li>
+        <li><a href="./water.html">Água</a></li>
       </ul>
     </nav>
+
     <main>
       <section>
         <form action="">
+          <div>
+            <label for="gender">Gênero</label>
+            <select name="gender" id="gender">
+              <option value="female">Feminino</option>
+              <option value="male">Masculino</option>
+            </select>
+          </div>
 
-            <div>
-          <label for="gender">Gênero</label>
-          <select name="gender" id="gender">
-            <option value="female">Feminino</option>
-            <option value="male">Masculino</option>
-            </div>
-            <div>
-          </select>
-          <label for="height">Altura(cm)</label>
-          <input type="number" name="" id="height" placeholder="Ex: 175" />
-        </div>
-        <div>
-          <label for="weight">Peso (kg)</label>
-          <input type="text" id="weight" placeholder="Ex: 70" />
-        </div>
-        <div>
-          <label for="age">Idade (anos)</label>
-          <input type="number" id="age" placeholder="18" />
-        </div>
-        <div>
-          <button>Calcular Calorias</button>
+          <div>
+            <label for="height">Altura (cm)</label>
+            <input type="number" id="height" placeholder="Ex: 175" />
+          </div>
+
+          <div>
+            <label for="weight">Peso (kg)</label>
+            <input type="number" id="weight" placeholder="Ex: 70" />
+          </div>
+
+          <div>
+            <label for="age">Idade (anos)</label>
+            <input type="number" id="age" placeholder="18" />
+          </div>
+
+          <button>Calcular calorias</button>
         </form>
+
         <a href="../index.html">Voltar</a>
-        </div>
+
         <div>
-            <p>Gasto Calórico Basal:</p>
-            <p>0000</p>
-            <p>Kcal/dia.</p>
+          <p>Gasto calórico basal:</p>
+          <p>0000</p>
+          <p>Kcal/dia</p>
         </div>
-        <!-- <h3> TMB </h3>
-            <p> Em breve você poderá calcular seu TMB </p>
-            <a href="../index.html"> Voltar </a> -->
       </section>
     </main>
+
     <footer>
-        <p> © 2026 FitLife
+      <p>© 2026 FitLife</p>
     </footer>
   </body>
 </html>
